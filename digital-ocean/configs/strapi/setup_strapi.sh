@@ -41,7 +41,7 @@ echo "ADMIN_JWT_SECRET=\"${ADMINSECRET}\"" >> /srv/strapi/strapi-development/.en
 
 # build the adminUI
 echo "Building the Strapi admin" >> $LOG
-cd /srv/strapi/strapi-development; yarn build --no-optimizations > /dev/null
+cd /srv/strapi/strapi-development; yarn build > /dev/null
 
 # ensure the strapi user owns the data dir
 echo "Changing ownership" >> $LOG
